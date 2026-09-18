@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu Dashboard</title>
+    <link rel="stylesheet" href="Admin Panel Styles.css">
+    <script src="currency.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=playfair+display:wght@400;700&family=lora:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f4f7f6; color: #333; }
+        .sidebar { width: 250px; height: 100vh; background-color: #bd9595; position: fixed; border-right: 1px solid #e0e0e0; padding: 20px; }
+        .main-content { margin-left: 270px; padding: 30px; }
+        .dashboard-card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); margin-bottom: 20px; }
+        .menu-table { width: 100%; border-collapse: collapse; margin-top: 20px; background: #fff; }
+        .menu-table th, .menu-table td { border: 1px solid #d3c8c8; padding: 12px; text-align: left; }
+        .menu-table th { background-color: #fafafa; }
+        .add-dish-btn { background-color: #e04f5f; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; float: right; }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2> 'LOVELY'<br>
+        Kitchen dashboard</h2><br>
+        <strong><p>Overview<br></strong>
+          * Dashboard<br>
+          * Orders<br>
+          * Menu<br>
+          * Customers<br>
+          * Reports<br>
+        </p>
+         <strong><p>Menu library<br></strong>
+          * Starters<br>
+          * Main Course<br>
+          * Desserts<br>
+          * Beverages<br>
+        </p>
+        <strong><p>Combo dishes<br></strong>
+          * Bahubali Thali<br>
+          * Spiderman Thali<br>
+          * Ironman Thali<br>
+          * Captain America Thali<br>
+          * Thor Thali<br>
+          * Hulk Thali<br>
+          * Black Panther Thali<br>
+          * Doctor Strange Thali<br>
+        </p>
+        <strong><p>Drinks<br></strong>
+          * Cold drinks<br>
+          * Hot drinks<br>
+          * Smoothies<br>
+          * Mocktails<br>
+        </p>
+
+    </div>
+    <div class="main-content">
+        <button class="add-dish-btn">+ Add dish</button>
+        <h1>HOW CAN I HELP YOU!! ARE YOU GUYS HUNGRY?</h1>
+        <div class="dashboard-card">
+          <h3>*SERVICE*</h3>
+            <h3>Menu items: [12]</h3>
+            <h3>Available today: [11/12]</h3>
+            <h3>[MAKE DELICIOUS YOUR DAY/NIGHT]</h3>
+            <h3>Delivery Done within<br>
+                    30 - 45 mins</h3>
+            <!-- HTML Code: Add this inside the empty space of the header tag -->
+<div class="profile-container">
+    <img src="img/profile.jpg" alt="Rajan" class="profile-img">
+    <p>Managed by Razan</p>
+</div>
+        </div>
+        <table class="menu-table">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="menu-body">
+                <!-- Menu items would go here -->
+                 <tr>
+  <td><img src="path/o/food-image.jpg" alt="Dish Image" style="width: 50px; height: 50px; object-fit: cover;"></td>
+  <td>Dish Name</td>
+  <td>Dish Description</td>
+  <td> Price</td>
+</tr>
+<div class="menu-list">
+  <div class="food-item">
+    <img src="img/burger.jpg" alt="Burger">
+    <div class="food-details">
+      <h3 class="food-name">Burger</h3>
+      <p class="food-desc">Classic cheese burger</p>
+      <span class="food-price">120.00</span>
+    </div>
+  </div>
+ <div class="food-item">
+    <img src="img/samosa.jpg" alt="Samosa with chutney">
+    <div class="food-details">
+      <h3 class="food-name">Samosa</h3>
+      <p class="food-desc">Dhaba style samosa with chutney</p>
+      <span class="food-price">30.00 pieces</span>
+    </div>
+</div>
+  <div class="food-item">
+    <img src="img/whitepasta.jpg" alt="whitePasta">
+    <div class="food-details">
+      <h3 class="food-name">Pasta</h3>
+      <p class="food-desc">Creamy Alfredo Pasta</p>
+      <span class="food-price">250.00</span>
+    </div>
+  </div>
+  <div class="food-item">
+    <img src="img/pizza.jpg" alt="Pizza">
+    <div class="food-details">
+      <h3 class="food-name">Pizza</h3>
+      <p class="food-desc">Margherita Pizza</p>
+      <span class="food-price">350.00</span>
+   </div>
+   </div>
+    <div class="food-item">
+    <img src="img/redpasta.jpg" alt="redPasta">
+    <div class="food-details">
+      <h3 class="food-name">Pasta</h3>
+      <p class="food-desc">Creamy Alfredo pasta</p>
+      <span class="food-price">180.00</span>
+    </div>
+  </div>
+  <div class="food-item">
+    <img src="img/chickenpizza.jpg" alt="chickenPizza">
+    <div class="food-details">
+      <h3 class="food-name">Pizza</h3>
+      <p class="food-desc">Margherita pizza</p>
+      <span class="food-price">250.00</span>
+    </div>
+  </div>
+  <div class="food-item">
+    <img src="img/Sandwich.jpg" alt="Sandwich">
+    <div class="food-details">
+      <h3 class="food-name">Sandwich</h3>
+      <p class="food-desc">Grilled club sandwich</p>
+      <span class="food-price">150.00</span>
+    </div>
+  </div>
+  <div class="food-item">
+    <img src="img/salad.jpg" alt="Salad">
+    <div class="food-details">
+      <h3 class="food-name">Salad</h3>
+      <p class="food-desc">Fresh Greek salad</p>
+      <span class="food-price">110.00</span>
+    </div>
+  </div>
+
+  <div class="food-item">
+    <img src="img/hotpasta.jpg" alt="hotPasta">
+    <div class="food-details">
+      <h3 class="food-name">Pasta</h3>
+      <p class="food-desc">Creamy Alfredo pasta</p>
+      <span class="food-price">200.00</span>
+    </div>
+  </div>
+  <div class="food-item">
+    <img src="img/paneermakhani.jpg"alt="paneer makhani">
+    <div class="food-details">
+      <h3 class="food-name">Paneer Makhani</h3>
+      <p class="food-desc">Delicious Indian paneer curry</p>
+      <span class="food-price">250.00</span>
+    </div>
+  </div>
+  <div class="food-item">
+    <img src="img/Garlic naan.jpg" alt="Garlic Naan">
+    <div class="food-details">
+      <h3 class="food-name">Garlic Naan</h3>
+      <p class="food-desc">Soft Indian bread</p>
+      <span class="food-price">50.00</span>
+    </div>
+  </div>
+
+  <div class="food-item">
+    <img src="img/Chicken Biryani.jpg" alt="Chicken Biryani">
+    <div class="food-details">
+      <h3 class="food-name">Chicken Biryani</h3>
+      <p class="food-desc">Spicy hyderabadi biryani</p>
+     <span class="food-price">300.00</span>
+    </div>
+  </div>
+  <div class="food-item">
+    <img src="img/Chicken Curry.jpg" alt="Chicken Curry">
+    <div class="food-details">
+      <h3 class="food-name">Chicken Curry</h3>
+      <p class="food-desc">Home style chicken curry</p>
+      <span class="food-price">280.00</span>
+    </div>
+  </div>
+  <div class="food-item">
+    <img src="img/muttonroganjosh.jpg" alt="Mutton Rogan Josh">
+    <div class="food-details">
+      <h3 class="food-name">Mutton Rogan Josh</h3>
+      <p class="food-desc">Classic Kashmiri mutton dish</p>
+      <span class="food-price">400.00</span>
+      <h3>View more items</h3>
+    </div>
+        <strong>Popular Dishes Table here...</strong>
+<!-- Paste this in the <head> of dashboard.html -->
+
+<!-- HTML Snippet for Stats -->
+<div class="stats-container" style="display: flex; gap: 20px; margin-top: 20px;">
+  <div class="dashboard-card" style="flex: 1;">Menu items: 9 (+12%)</div>
+  <div class="dashboard-card" style="flex: 1;">Available today: 8/9 (+4%)</div>
+  <div class="dashboard-card" style="flex: 1;">Average price: ₹297.222 (+8%)</div>
+  <div class="dashboard-card" style="flex: 1;">Menu engagement: 84% (+18%)</div>
+</div>
+
+  </div>
+
+            </tbody>
+            <tr>
+  <td><img src="img/muttonroganjosh.jpg" alt="muttonroganjosh" style="width: 50px; height: 50px;"></td>
+  <td>Mutton Rogan Josh</td>
+  <td>Classic Kashmiri mutton dish</td>
+  <td>400.00</td>
+</tr>
+<tr>
+  <td><img src="img/Chicken Biryani.jpg" alt="Chicken Biryani" style="width: 50px; height: 50px;"></td>
+  <td>Chicken Biryani</td>
+  <td>Spicy hyderabadi biryani</td>
+  <td>300.00</td>
+</tr>
+        </table>
+    </div>
+</body>
+</html>dashboard.html
