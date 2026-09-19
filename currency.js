@@ -14,3 +14,11 @@ document.querySelector('#add-dish-form')?.addEventListener('submit', (e) => {
     e.preventDefault();
     alert('Dish added (functionality needs backend connection)');
 });
+/* JavaScript Code */
+function openNav() {
+  document.querySelector(".sidebar").style.width = "150px";
+}
+
+function closeNav() {
+  document.querySelector(.sidebar").style.width = "0";
+}
