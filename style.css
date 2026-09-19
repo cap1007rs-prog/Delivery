@@ -19,15 +19,15 @@
 }
 /* Updated CSS */
 .sidebar {
-  width: 250px;
-  height: 100vh;
+  width: 150px;
+  height: auto;
   background-color: #fff;
   position: fixed;
   border-right: 1px solid #e0e0e0;
   display: flex;
   flex-direction: column;
   padding: 20px;
-  height: 100vh;
+  height: auto;
   overflow-y: auto;
 
 }
@@ -160,7 +160,7 @@ body {
 
   .food-item img {
     width: 100%;
-    height: 200px;
+    height: auto;
     object-fit: cover;
   }
 
