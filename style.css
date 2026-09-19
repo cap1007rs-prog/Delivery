@@ -125,3 +125,71 @@ body {
 .dashboard-card h3:first-of-type {
   font-size: 2.05em;
 }
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 20px 15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .stats-container {
+    flex-direction: column;
+  }
+
+  .menu-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+
+  .menu-list {
+    grid-template-columns: 1fr;
+  }
+
+  .food-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .login-box {
+    width: 90%;
+    max-width: 320px;
+    padding: 20px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-container img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-card h3:first-of-type {
+    font-size: 1.4em;
+  }
+
+  .add-dish-btn {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
